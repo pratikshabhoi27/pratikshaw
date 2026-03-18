@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav {
+            display: flex;
+            background: #333;
+        }
+
+            .nav a {
+                color: white;
+                padding: 14px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .nav a:hover {
+                    background: #ddd;
+                    color: black;
+                }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 20px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width:768px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Responsive Web Design Example</p>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Sem 1</h2>
+            <p>bms<br />
+            eng<br />
+            bsc<br />
+            ict<br />
+            wpc<br />
+            yam<br />
+            egp</p>
+        </div>
+
+        <div class="column">
+            <h2>Sem 2</h2>
+            <p>ams<br />
+            bee<br />
+            pic<br />
+            blp<br />
+            pco<br />
+            wpd</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>contact information</p>
+    </div>
+    <address>
+        MET'S Institute of Technology - Polytechnic Bhujbal Knowledge city<br />
+        Department of Information Technology<br />
+        Email: anushkaware@gmail.com<br />
+        phone:8459223477
+    </address>
+</body>
+</html>
